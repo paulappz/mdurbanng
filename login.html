@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MDUrban</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/css.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+        <link href="css/thumbnail-gallery.css" rel="stylesheet">
+       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/carousel.css" rel="stylesheet">
+        <style>
+                body{
+                  font-family: jura;
+                  margin:0;
+                  padding: 0;
+                  width: 100%;
+                }
+
+
+
+.container-fluid{
+  padding:0px;
+  margin:0px;
+  height: 100%;
+  width: 100%;
+}
+a:hover{
+  text-decoration: none;
+}    
+
+/* SHIFT */
+.nav-ban ul li a {
+  position:relative;
+  z-index: 1;
+}
+.nav-ban ul li a:hover {
+  color:greenyellow;
+}
+.nav-ban ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: white;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.nav-ban ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+/* NAVIGATION */
+
+.nav-ban {
+  width: 100%;
+  margin: 0 auto;
+  background:green;
+
+  box-shadow: 0px 5px 0px rgba(0, 153, 51,0.4);
+}
+.nav-ban ul {
+  list-style: none;
+  text-align: center;
+}
+.nav-ban ul li {
+  display: inline-block;
+}
+.nav-ban ul li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 5px;
+}
+.nav-ban ul li a,
+.nav-ban ul li a:after,
+.nav-ban ul li a:before {
+  transition: all .5s;
+}
+.nav-ban ul li a:hover {
+  color: green;
+}
+
+
+/* Inner */
+.popup-inner {
+
+    max-width:400px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    margin-top: 30px;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0, 153, 51,0.4);
+    border-radius:3px;
+   background-color: rgba(0, 153, 51,0.4);
+    z-index:9;
+}
+
+
+
+
+.form_div
+{
+width:330px;
+margin: 0 auto;
+padding:10px;
+ background-color:green;
+margin-top:8%;
+position: relative;
+font-family: 'Jura', sans-serif;
+
+}
+.form_div .form_label
+{
+margin:15px;
+margin-bottom:30px;
+font-size:25px;
+font-weight:light;
+color:white;
+text-decoration:underline;
+text-align: center;
+font-family: 'Jura', sans-serif;
+}
+.form_div input[type="text"],input[type="password"],select
+{
+width:200px;
+height:30px;
+border-radius:2px;
+font-size:14px;
+padding-left:5px;
+border:none;
+display: block;
+margin:auto;
+font-family: 'Jura', sans-serif;
+}
+.form_div input[type="submit"]
+{
+width:200px;
+height:30px;
+border:none;
+border-radius:2px;
+font-size:14px;
+background-color:#7F8C8D;
+border-bottom:3px solid #616A6B;
+color:white;
+font-weight:bold;
+display: block;
+margin:auto;
+font-family: 'Jura', sans-serif;
+}
+
+ </style>
+  </head>
+  <body>
+
+
+
+<div class="container-fluid">
+<div class="nav-ban" style="margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0;
+    z-index:9; height: 30px; background-color:green; width: 100%;">
+<ul style="width:600px; margin-left: 50px; float:left;">
+   <li><a  href="index.html" class="glyphicon glyphicon-home"></a></li>
+<li><a href="about.html">About</a></li>
+<li><a  href="service.html">Services</a></li>
+<li><a  href="#">Partners</a></li>
+<li><a  href="#">FAQ</a></li>
+<li><a  href="contact.html">Contact</a></li>
+</ul> 
+<div class="col-md-3" style="float:left; ">
+    <div class="input-group">
+      <span class="input-group-btn" >
+        <button class="btn btn-default" style="height: 30px; color:rgba(204, 255, 204,0.5);background-color: green; border-color: rgba(204, 255, 204,0.5);"type="button">Search</button>
+      </span>
+      <input type="text" class="form-control" style="height: 30px;color:rgba(204, 255, 204,0.5);background-color: green;border-color: rgba(204, 255, 204,0.5);border-radius: 0px;" placeholder="">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-md-3" style="float:left; ">
+   
+  </div><!-- /.col-lg-6 -->
+<ul>
+  <li><a  href="#" class="glyphicon glyphicon-earphone"></a></li>
+<li><a href="login.html" class="">Login</a></li>
+
+
+</ul> 
+
+</div>
+
+
+    <div class="popup-inner">
+
+       <div class="form_div Login">
+        <p class="form_label">Login </p>
+        <form method="post" action="loginservice.php" name="myForm2" onsubmit="return validateLoginForm()">
+            <div id="errorBox2" ></div>
+            <p>
+                <input type="text" placeholder="Enter Email" name="email">
+            </p>
+            <p>
+                <input type="password" placeholder="**********" name="password">
+            </p>
+            <p>
+                <input type="submit" value="LOGIN" name="submit" id="submit">
+            </p>
+
+            <div style="margin:0 auto;  text-align:center; color:white; font-size: 12px;"><a style="color:#ccc" href="signup.html"><strong>Reset Password</strong></a></div>
+        </form>
+
+        <div style="margin:0 auto;  text-align:center; color:white; font-size: 12px;">Not Registered?  then &nbsp =>><a style="color:white" href="signup.html"><strong> &nbsp; Sign Up</strong></a></div>
+
+
+    </div>
+
+    </div>
+
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+<script>
+var theUrl= "https://www.lsmvaapvs.org/search.php?vpn=SE249KJA";
+
+var request = new XMLHttpRequest();
+request.onreadystatechange = function() {
+    if (request.readyState === 4) {
+        if (request.status === 200) {
+            document.body.className = 'ok';
+         //   console.log(request.responseText);
+            var res = request.responseText;
+var s = $(request.responseText).find('fieldset').html();
+var t = $(request.responseText).contents().find('.form-group').text();
+
+var dom =  $.trim(s).replace('<!--','').replace('-->','');
+
+var fi = $(s).find('.form-group').text();
+console.log(dom);
+
+console.log(t);
+var filt = new RegExp(
+    '<!--[\\s\\S]*?(?:-->)?'
+    + '<!---+>?'  // A comment with no body
+    + '|<!(?![dD][oO][cC][tT][yY][pP][eE]|\\[CDATA\\[)[^>]*>?'
+    + '|<[?][^>]*>?',  // A pseudo-comment
+    'g');
+
+//var StrippedString = OriginalString.replace(/(<([^>]+)>)/ig,"");
+
+//var z = $(filterd).contents().find('.form-group').text();
+        } else {
+            document.body.className = 'error';
+        }
+    }
+};
+request.open("GET", theUrl, true);
+request.send(null);
+
+ 
+</script>
+
+</script>
+
