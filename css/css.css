@@ -1,13 +1,316 @@
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 
+       body{
+                  font-family: jura;
+                  margin:0;
+                  padding: 0;
+                  width: 100%;
+                }
 
-.navbar-wrapper {
-  	position: absolute;
-  	top: 0;
-  	right: 0;
-    width: 100% !important;
-  	left: 0;
-  	z-index: 20;
+.container-fluid{
+  padding:0px;
+  margin:0px;
+  height: 100%;
+  width: 100%;
+}
+a:hover{
+  text-decoration: none;
+}    
+
+/* SHIFT */
+.nav-ban ul li a {
+  position:relative;
+  z-index: 1;
+}
+.nav-ban ul li a:hover {
+  color:greenyellow;
+}
+.nav-ban ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: white;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.nav-ban ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
 }
 
-/* Flip around the padding for proper display in narrow viewports */
+/* NAVIGATION */
+
+.nav-ban {
+  width: 100%;
+  margin: 0 auto;
+  background:green;
+  box-shadow: 0px 5px 0px rgba(0, 153, 51,0.4);
+}
+
+.nav-ban ul {
+  list-style: none;
+  text-align: center;
+}
+.nav-ban ul li {
+  display: inline-block;
+}
+.nav-ban ul li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 5px;
+}
+.nav-ban ul li a,
+.nav-ban ul li a:after,
+.nav-ban ul li a:before {
+  transition: all .5s;
+}
+.nav-ban ul li a:hover {
+  color: green;
+}
+
+.qlink{height: 180px; text-align: center;font-size: 12px;
+}
+
+
+.qlink ul li{
+  margin-bottom: 5px;
+  list-style: none;
+  
+}
+.qlink ul li
+ a{
+ color:white;}
+.qlbtn{
+  border-radius: 10px;
+  color:green;
+  font-weight:bold;width: 100px;margin: 0 auto; background-color: white;
+}
+.qlink ul li
+ a img{
+   display: block;
+   margin: auto;
+ }
+ .soc li {
+   float: left;
+   margin-left:20px;
+ }
+
+
+
+        .nav-ban-extra{
+margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0;
+    z-index:9; height: 30px; background-color:green; width: 100%;
+       -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+      
+        } 
+
+
+@keyframes example {
+    0%   {left:0px; top:0;display:none}
+    100% { left:0px; top:3px;}
+  
+      
+}
+
+
+
+
+
+        .nav-ban-extra ul {
+width:600px; margin-left: 50px; float:left;
+        }
+
+.btn-extra{height: 30px; color:rgba(204, 255, 204,0.5);
+background-color: green; border-color: rgba(204, 255, 204,0.5);
+}
+
+.search, {
+float:left;
+}
+
+
+.left-nav ul{
+  float: left;
+  width:200px;
+}
+
+.search input{height: 30px;color:rgba(204, 255, 204,0.5);
+background-color: green;border-color: rgba(204, 255, 204,0.5);;
+}
+.carousel-caption h1{background-color: rgba(0, 0, 0,.6);
+}
+
+.carousel-caption .btn{
+background-color: green;color:white;
+}
+
+.service{margin: 0 auto; position: relative; width: 95%;clear:both;
+border: 1px solid rgba(0, 153, 51,0.4);border-radius: 10px; margin-top:-50px;
+}
+
+.service-inn{ background-color:rgb(255, 255, 255,.9); float:left;
+}
+.txt{margin:40px auto;text-align:center;font-size: 23px; color: green;
+}
+.txt ul{text-align: left; font-style: italic;font-size: 18px;
+}
+.ban{float:left;background-image: url(img/px2.jpg); background-color:white; 
+background-position: right; background-repeat: no-repeat;height: 378px;
+}
+
+.serv-ban{background-color: rgba(0, 153, 51,0.4);width: 95%;display: block; margin: auto; margin-top: 10px;
+}
+.serv-ban-inn{text-align: center; color:white;height: 30px;font-size: 28px; margin-top: 10px;
+}
+
+.thumb a{text-align: center; color: green;
+}
+
+.ads-ban{margin: 0 auto; position: relative; width: 95%;height: 400px; margin-top:10px;
+ background: green; /* For browsers that do not support gradients */    
+    background: -webkit-linear-gradient(left, green, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, green, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right,green, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, green, black); /* Standard syntax (must be last) */
+}
+
+.foot-inn{background-image: url(img/icon2.jpg);width: 100%;
+          margin:0 auto; background-color:white; 
+background-position: right; background-repeat: no-repeat;background-size: cover; height:300px; 
+padding-top:25px;
+}
+.foot-inn-inn{width: 70%; background-color: rgba(0, 153, 51,0.4); 
+    margin:0 auto;height: 250px;padding-top:25px; min-width: 85%;
+}
+.lin-k{width: 97%; border-radius:10px;  background-color: green;margin: 0 auto;
+          height: 200px;padding:10px 10px ;
+}
+
+
+
+
+
+
+
+
+
+.form_div
+{
+width:80%;
+margin: 0 auto;
+padding:10px;
+position: relative;
+font-family: 'Jura', sans-serif;
+color: green;
+
+}
+.form_div .form_label
+{
+margin:15px;
+margin-bottom:30px;
+font-size:25px;
+font-weight:light;
+color:green;
+text-decoration:underline;
+text-align: center;
+font-family: 'Jura', sans-serif;
+}
+.form_div input[type="text"],input[type="password"],textarea
+{
+width:100%;
+height:30px;
+border-radius:2px;
+font-size:14px;
+padding-left:5px;
+border:none;
+display: block;
+margin:auto;
+font-family: 'Jura', sans-serif;
+}
+.form_div input[type="submit"]
+{
+width:200px;
+height:30px;
+border:none;
+border-radius:2px;
+font-size:14px;
+background-color:green;
+border-bottom:3px solid rgba(0, 153, 51,0.4);
+color:white;
+font-weight:bold;
+display: block;
+margin:auto;
+font-family: 'Jura', sans-serif;
+}
+
+.continn{
+    background-color: green;
+    max-width: 500px;
+    width:90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding:10px 10px 10px 10px;
+   
+}
+label{
+     color: white;
+}
+textarea{
+    height: 150px;
+}
+
+
+.map-con{
+height:400px;
+}
+
+.map{
+    width: 100%;
+padding: 10px 10px 10px 10px;
+margin-top:35px;
+}
+.serv-info-inn h2{
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+
+.map-inn{text-align: center; color: white; font-size: 2.5vw; 
+}
+.map-serv h1{
+font-size: 4vw; text-align: center;color:green;background-color: rgba(0, 0, 0,.1);
+}
+
+.serv{width:90%;  display: block; margin: auto; ;font-size:18px;
+}
+
+.serv-inn{width:100%; padding: 10px;clear:both;
+}
+
+.serv-info{padding-top:1px; padding-bottom:5px;}
+
+.serv-info-inn{width:98%; margin:0 auto;
+}

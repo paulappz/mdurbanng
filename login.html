@@ -33,6 +33,10 @@
                   margin:0;
                   padding: 0;
                   width: 100%;
+                  background-image: url(img/fam.jpg);
+                  background-repeat: no-repeat;
+                  background-size: 100%;
+                  height: 100%;
                 }
 
 
@@ -190,38 +194,31 @@ font-family: 'Jura', sans-serif;
 
 
 <div class="container-fluid">
-<div class="nav-ban" style="margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0;
-    z-index:9; height: 30px; background-color:green; width: 100%;">
-<ul style="width:600px; margin-left: 50px; float:left;">
-   <li><a  href="index.html" class="glyphicon glyphicon-home"></a></li>
+<div class="nav-ban nav-ban-extra">
+<ul>
+  <li><a  href="index.html" class="glyphicon glyphicon-home"></a></li>
 <li><a href="about.html">About</a></li>
 <li><a  href="service.html">Services</a></li>
 <li><a  href="#">Partners</a></li>
 <li><a  href="#">FAQ</a></li>
 <li><a  href="contact.html">Contact</a></li>
 </ul> 
-<div class="col-md-3" style="float:left; ">
+
+<div class="col-md-3 search">
     <div class="input-group">
-      <span class="input-group-btn" >
-        <button class="btn btn-default" style="height: 30px; color:rgba(204, 255, 204,0.5);background-color: green; border-color: rgba(204, 255, 204,0.5);"type="button">Search</button>
+      <span class="input-group-btn">
+        <button class="btn btn-default btn-extra" type="button">Search</button>
       </span>
-      <input type="text" class="form-control" style="height: 30px;color:rgba(204, 255, 204,0.5);background-color: green;border-color: rgba(204, 255, 204,0.5);border-radius: 0px;" placeholder="">
+      <input type="text" class="form-control"  placeholder="">
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
-  <div class="col-md-3" style="float:left; ">
-   
-  </div><!-- /.col-lg-6 -->
-<ul>
+<div class="col-md-2 left-nav">
+     <ul>
   <li><a  href="#" class="glyphicon glyphicon-earphone"></a></li>
-<li><a href="login.html" class="">Login</a></li>
-
+<li><a href="#" class="">Login</a></li>
 
 </ul> 
+</div>
 
 </div>
 
