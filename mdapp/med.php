@@ -681,7 +681,7 @@ font-weight:bolder;
 
 
 <li><a  href="#"><img src="img/settg.png"  width="23" height="23" style=""></a></li>
-<li><a  href="#">Logout</a></li>
+<li><a  href="../login.html">Logout</a></li>
 </ul> 
 
 </div >

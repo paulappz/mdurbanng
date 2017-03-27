@@ -590,7 +590,7 @@ margin-top:20px;color:green;display:none;font-size:50px;font-weight:400;font-fam
 
 
 <li><a  href="#"><img src="img/settg.png"  width="23" height="23" style=""></a></li>
-<li><a  href="#">Logout</a></li>
+<li><a  href="../login.html">Logout</a></li>
 </ul> 
 
 
@@ -635,7 +635,7 @@ Click the button and Kindly fill the your Profile form
 <div  style="background-color:rgba(255, 255, 255, 0.7); box-shadow: 0 0 0 5px #00cc00;
     animation: 5s animateBorderOne ease infinite;
     border-radius: 5px;">
-<a href="health.php"><img src="img/med.png" width="80px";height:"80px;" ></a>
+<a href="med.php"><img src="img/med.png" width="80px";height:"80px;" ></a>
 </div>Medical</div>
 
 
@@ -644,7 +644,7 @@ Click the button and Kindly fill the your Profile form
 <div  style="background-color:rgba(255, 255, 255, 0.7); box-shadow: 0 0 0 5px #00cc00;
     animation: 5s animateBorderOne ease infinite;
     border-radius: 5px;">
-<a href="health.php"><img src="img/insur.png" width="80px";height:"80px;" ></a>
+<a href="#"><img src="img/insur.png" width="80px";height:"80px;" ></a>
 </div>Insurance</div>
 
 
@@ -652,7 +652,7 @@ Click the button and Kindly fill the your Profile form
 <div  style="background-color:rgba(255, 255, 255, 0.7); box-shadow: 0 0 0 5px #00cc00;
     animation: 5s animateBorderOne ease infinite;
     border-radius: 5px;">
-<a href="health.php"><img src="img/shop.png" width="80px";height:"80px;" ></a>
+<a href="#"><img src="img/shop.png" width="80px";height:"80px;" ></a>
 </div>E-Commerce</div>
 
 </div>
