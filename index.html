@@ -170,7 +170,19 @@ Goals and Objectives are:
 
 
 <div class="row  ads-ban">
+  <div   style="width:80%;font-size:30px;color:white;font-weight:bolder;margin:20px auto;">
+<img  src="img/logo3.png" width="80" height="80">
 
+MD urban Web Platform View from Sign-Up session to Medical Session
+  </div>
+<div style="margin:10px auto;" style="width:90%;">
+<img src="img/signup-view.png" width="250" height="250" style="float:left;margin-right:10px;margin-left:20px;">
+<img src="img/login-view.png" width="250" height="250" style="float:left;margin-right:10px;">
+<img src="img/home-page.png" width="250" height="250" style="float:left;margin-right:10px;">
+<img src="img/health-view.png" width="250" height="250" style="float:left;margin-right:10px;">
+<img src="img/med-view.png" width="250" height="250" style="float:left;margin-right:10px;">
+
+</div>
 </div>
         <div class="foot">
           <div class="foot-inn">
@@ -225,6 +237,8 @@ Goals and Objectives are:
     
 
 </div>
+<div id="loader"></div>
+
 </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -234,9 +248,19 @@ Goals and Objectives are:
   </body>
 </html>
 
-
 <script>
 
 
-</script>
 
+var $loading = $('#loader').hide();
+$(document)
+  .ajaxStart(function () {
+    $loading.show();
+  })
+  .ajaxStop(function () {
+    $loading.hide();
+  });
+
+
+
+</script>

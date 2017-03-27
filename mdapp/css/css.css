@@ -1,0 +1,9 @@
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+       body{
+                  font-family: jura;
+                  margin:0;
+                  padding: 0;
+                  width: 100%;
+                }
+

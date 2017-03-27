@@ -307,7 +307,7 @@ font-family: 'Jura', sans-serif;
 
 
 
-
+<div id="loader"></div>
 
 
 </div>
@@ -318,9 +318,19 @@ font-family: 'Jura', sans-serif;
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
-
-
 <script>
+
+
+
+var $loading = $('#loader').hide();
+$(document)
+  .ajaxStart(function () {
+    $loading.show();
+  })
+  .ajaxStop(function () {
+    $loading.hide();
+  });
+
 
 
 </script>

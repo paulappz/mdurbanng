@@ -15,7 +15,22 @@
 }
 a:hover{
   text-decoration: none;
-}    
+}   
+
+
+#loader {
+    border: 8px solid rgba(255,255,255,.8); /* Light grey */
+    border-top: 8px solid green ;/* Blue */
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    animation: spin 2s linear infinite;
+    position:absolute;
+    z-index:9;
+    top:300px;left:50%;
+}
+ 
 
 /* SHIFT */
 .nav-ban ul li a {
@@ -184,7 +199,7 @@ background-position: right; background-repeat: no-repeat;height: 378px;
 .thumb a{text-align: center; color: green;
 }
 
-.ads-ban{margin: 0 auto; position: relative; width: 98%;height: 400px; margin-top:10px;
+.ads-ban{margin: 0 auto; position: relative; width: 98%; margin-top:10px;
  background: green; /* For browsers that do not support gradients */    
     background: -webkit-linear-gradient(left, green, black); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, green, black); /* For Opera 11.1 to 12.0 */

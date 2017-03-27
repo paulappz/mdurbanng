@@ -175,7 +175,7 @@ Maintain a strong connection to your MDUrban team who will continue to support y
 </div>
 
 
-
+<div id="loader"></div>
 
 </div>
 
@@ -188,6 +188,18 @@ Maintain a strong connection to your MDUrban team who will continue to support y
 
 
 <script>
+
+
+
+var $loading = $('#loader').hide();
+$(document)
+  .ajaxStart(function () {
+    $loading.show();
+  })
+  .ajaxStop(function () {
+    $loading.hide();
+  });
+
 
 
 </script>

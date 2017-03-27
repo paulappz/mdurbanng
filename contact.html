@@ -94,6 +94,8 @@
         </form>
     </div>
    
+<div id="loader"></div>
+
 </div>
 
 
@@ -107,8 +109,19 @@
   </body>
 </html>
 
-
 <script>
+
+
+
+var $loading = $('#loader').hide();
+$(document)
+  .ajaxStart(function () {
+    $loading.show();
+  })
+  .ajaxStop(function () {
+    $loading.hide();
+  });
+
 
 
 </script>

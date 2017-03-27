@@ -135,8 +135,6 @@ a:hover{
 }
 
 
-
-
 .form_div
 {
 width:330px;
@@ -298,6 +296,20 @@ request.send(null);
 
  
 </script>
+<script>
+
+
+
+var $loading = $('#loader').hide();
+$(document)
+  .ajaxStart(function () {
+    $loading.show();
+  })
+  .ajaxStop(function () {
+    $loading.hide();
+  });
+
+
 
 </script>
 

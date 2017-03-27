@@ -153,6 +153,8 @@ font-size: 4vw; text-align: center;color:green;background-color: rgba(0, 0, 0,.1
 
 </div>
 
+<div id="loader"></div>
+
 </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -162,8 +164,19 @@ font-size: 4vw; text-align: center;color:green;background-color: rgba(0, 0, 0,.1
   </body>
 </html>
 
-
 <script>
+
+
+
+var $loading = $('#loader').hide();
+$(document)
+  .ajaxStart(function () {
+    $loading.show();
+  })
+  .ajaxStop(function () {
+    $loading.hide();
+  });
+
 
 
 </script>
