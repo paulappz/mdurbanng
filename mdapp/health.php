@@ -833,7 +833,7 @@ position:relative
 
 
 <div class="" style="width:96%;padding-top:1px;padding-bottom:1px;background-color:white;margin:auto;margin-bottom:20px; box-shadow: 0px 1px 1px 1px rgba(0, 153, 51,0.1);
-color:#003300;text-align:center;"><h3><img src="img/tips.png" width="50" height="50"> &nbsp Health, Fittness and Wellness Tips</h3></div>
+color:#003300;text-align:center;"><h3><img src="img/tips.png" width="50" height="50"> &nbsp Health, Fitness and Wellness Tips</h3></div>
 
           <div class="" style="width:96%; background-color:white;margin:auto;margin-bottom:20px;padding-bottom:20px;box-shadow: 0px 1px 1px 1px rgba(0, 153, 51,0.1);">
           <div class="" style="background-color:white;width:100%;height:90px;border:1px solid #b3ffb3;
