@@ -32,46 +32,69 @@
  h1{
 font-size: 4vw; text-align: center;color:green;background-color: rgba(0, 0, 0,.1);
 }
+  .container-fluid{
+ background-color: green;
+    text-decoration:none;
+    color:white;
+  }
 
+ul li{   color:white;
+  }
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #00e600;
+    background-color: transparent;
+}
+.container h1{
+font-size:18px;
+}
+
+.service li, .txt{
+color:green;
+font-size:16px;
+}
  </style>
   </head>
   <body>
 
-<div class="container-fluid">
-<div class="nav-ban" style="margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0;
-    z-index:9; height: 30px; background-color:green; width: 100%;">
-<ul style="width:600px; margin-left: 50px; float:left;">
-  <li><a  href="index.html" class="glyphicon glyphicon-home"></a></li>
+<nav class="navbar navbar-inverse " style='
+  box-shadow: 0px 5px 0px rgba(0, 153, 51,0.4);   '>
+  <div class="container-fluid"style="color:white;" >
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="margin-left:20px;padding-top:7px;"><img src="mdapp/img/logo3.png" width=37; height="37"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar"  style="margin-left:20px;">
+    
+       <ul   class="nav navbar-nav" >
+  <li><a  href="#" class="glyphicon glyphicon-home"></a></li>
 <li><a href="about.html">About</a></li>
-<li><a  href="#">Services</a></li>
+<li><a  href="service.html">Services</a></li>
 <li><a  href="#">Partners</a></li>
 <li><a  href="#">FAQ</a></li>
 <li><a  href="contact.html">Contact</a></li>
 </ul> 
-<div class="col-md-3" style="float:left;">
-    <div class="input-group">
-      <span class="input-group-btn" >
-        <button class="btn btn-default" style="height: 30px; color:rgba(204, 255, 204,0.5);background-color: green; border-color: rgba(204, 255, 204,0.5);"type="button">Search</button>
-      </span>
-      <input type="text" class="form-control" style="height: 30px;color:rgba(204, 255, 204,0.5);background-color: green;border-color: rgba(204, 255, 204,0.5);border-radius: 0px;" placeholder="">
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-  <div class="col-md-3" style="float:left; ">
-   
-  </div>
-<ul>
+      <ul class="nav navbar-nav navbar-right"  style="margin-right:50px;">
   <li><a  href="#" class="glyphicon glyphicon-earphone"></a></li>
 <li><a href="login.html" class="">Login</a></li>
 
 </ul> 
 
-</div>
-<div class="map map-serv" style="margin-top: 35px; background-image: url(img/djll.png); background-repeat: no-repeat;
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="map map-serv" style="margin-top: -35px; background-image: url(img/djll.png); background-repeat: no-repeat;
  width: 100%;height: 450px;background-size: cover;" >
  
         <h1>Services</h1>
@@ -80,7 +103,7 @@ font-size: 4vw; text-align: center;color:green;background-color: rgba(0, 0, 0,.1
     
     </div>
   <h1>  Experience wellness services at its best.</h1>
-<div class="row serv ">
+<div class="row serv "  style="color:green;">
 
 
 <div class="serv-inn">

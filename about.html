@@ -20,42 +20,72 @@
  h1{
 font-size: 4vw; text-align: center;color:green;background-color: rgba(0, 0, 0,.1);
 }
+  .container-fluid{
+ background-color: green;
+    text-decoration:none;
+    color:white;
+  }
+
+ul li{   color:white;
+  }
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #00e600;
+    background-color: transparent;
+}
+.container h1{
+font-size:18px;
+}
+
+.service li, .txt{
+color:green;
+font-size:16px;
+}
+
  </style>
   </head>
   <body>
 
 
 
-<div class="container-fluid">
-
-<div class="nav-ban nav-ban-extra">
-<ul>
-  <li><a  href="index.html" class="glyphicon glyphicon-home"></a></li>
+<nav class="navbar navbar-inverse " style='
+  box-shadow: 0px 5px 0px rgba(0, 153, 51,0.4);   '>
+  <div class="container-fluid"style="color:white;" >
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="margin-left:20px;padding-top:7px;"><img src="mdapp/img/logo3.png" width=37; height="37"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar"  style="margin-left:20px;">
+    
+       <ul   class="nav navbar-nav" >
+  <li><a  href="#" class="glyphicon glyphicon-home"></a></li>
 <li><a href="about.html">About</a></li>
 <li><a  href="service.html">Services</a></li>
 <li><a  href="#">Partners</a></li>
 <li><a  href="#">FAQ</a></li>
 <li><a  href="contact.html">Contact</a></li>
 </ul> 
-
-<div class="col-md-3 search">
-    <div class="input-group">
-      <span class="input-group-btn">
-        <button class="btn btn-default btn-extra" type="button">Search</button>
-      </span>
-      <input type="text" class="form-control"  placeholder="">
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-<div class="col-md-2 left-nav">
-     <ul>
+      <ul class="nav navbar-nav navbar-right"  style="margin-right:50px;">
   <li><a  href="#" class="glyphicon glyphicon-earphone"></a></li>
 <li><a href="login.html" class="">Login</a></li>
 
 </ul> 
-</div>
+
+      </ul>
+    </div>
+  </div>
+</nav>
 
 </div>
-<div class="map map-serv" style="margin-top: 35px; background-image: url(img/abtus.png); background-repeat: no-repeat;
+<div class="map map-serv" style="margin-top: -35px; background-image: url(img/abtus.png); background-repeat: no-repeat;
  width: 100%;height: 450px;background-size: cover;" >
  
         <h1>About Us</h1>
@@ -69,28 +99,8 @@ font-size: 4vw; text-align: center;color:green;background-color: rgba(0, 0, 0,.1
 <!--<div class="map"> <img class="" style="display:block; margin:auto;" src="img/ab.jpg" ></div>-->
 
 
-
-<div class="cont" style="margin:0 auto; width: 98%;">
- <div class="col-md-3 col-sm-3 col-lg-3 col-xs-3 sidebar"style="text-align:center;">
-     <div style="width:100%;margin:10px auto; height: 200px;border: 5px solid green;">
-<ul class="sidenav col-md-12 col-xs-12 col-sm-12 col-lg-12 " style="list-style: none;background-color: white;padding-top:20px;padding-bottom:20px;" >
      
-   
-     <li class="active"><a href="#ov"id="over" style="color: gray; font-size: larger">Overview</a></li>
-      <hr class="vert1" align="left" width="100%" style="background-color: green;"> 
-  <li ><a href="#mv"id="m" style="color: gray; font-size: larger">Mission & Vision</a></li>
-   <hr class="vert2" align="left" width="100%" > 
-    <li ><a href="#go"id="o" style="color: gray;font-size: larger">Goals & Objective</a></li>
-     
-
-</ul>
-
-     </div>
-
-
-     </div>
-     
-     <div class="col-md-9 col-sm-9 col-lg-9 col-xs-9 content" style=" font-size: 18px;"> 
+     <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 content" style=" font-size: 18px;margin:0 auto; color:green;"> 
 <div   id="ov" style="width:100%;margin:0 auto; background-color: white; font-size: 18px; display: block;">
       
      <h1>Overview</h1>
@@ -150,8 +160,6 @@ font-size: 4vw; text-align: center;color:green;background-color: rgba(0, 0, 0,.1
 
 
      </div>
-
-</div>
 
 <div id="loader"></div>
 

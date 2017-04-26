@@ -16,17 +16,51 @@
 
     <link href="css/carousel.css" rel="stylesheet">
         <style>
+  .container-fluid{
+ background-color: green;
+    text-decoration:none;
+    color:white;
+  }
 
+ul li{   color:white;
+  }
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #00e600;
+    background-color: transparent;
+}
+.container h1{
+font-size:18px;
+}
+
+.service li, .txt{
+color:green;
+font-size:16px;
+}
  </style>
   </head>
   <body>
 
 
 
-<div class="container-fluid">
-  
-<div class="nav-ban nav-ban-extra">
-<ul>
+<nav class="navbar navbar-inverse " style='
+  box-shadow: 0px 5px 0px rgba(0, 153, 51,0.4);   '>
+  <div class="container-fluid"style="color:white;" >
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="margin-left:20px;padding-top:7px;"><img src="mdapp/img/logo3.png" width=37; height="37"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar"  style="margin-left:20px;">
+    
+       <ul   class="nav navbar-nav" >
   <li><a  href="#" class="glyphicon glyphicon-home"></a></li>
 <li><a href="about.html">About</a></li>
 <li><a  href="service.html">Services</a></li>
@@ -34,25 +68,19 @@
 <li><a  href="#">FAQ</a></li>
 <li><a  href="contact.html">Contact</a></li>
 </ul> 
-
-<div class="col-md-3 search">
-    <div class="input-group">
-      <span class="input-group-btn">
-        <button class="btn btn-default btn-extra" type="button">Search</button>
-      </span>
-      <input type="text" class="form-control"  placeholder="">
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-<div class="col-md-2 left-nav">
-     <ul>
+      <ul class="nav navbar-nav navbar-right"  style="margin-right:50px;">
   <li><a  href="#" class="glyphicon glyphicon-earphone"></a></li>
 <li><a href="login.html" class="">Login</a></li>
 
 </ul> 
-</div>
 
-</div>
-<div class="map-con map" style="background: url(img/abt1.png); background-repeat: no-repeat;width: 100%;height: 300px;background-size: cover;" >
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="map-con map" style="background: url(img/abt1.png);margin-top: -35px; background-repeat: no-repeat;width: 100%;height: 300px;background-size: cover;" >
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1406550039187!2d3.3492668141895505!3d6.50387269529538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c3d9d91428d%3A0xd2a1f6a1f08e8027!2s68+Ogunlana+Dr%2C+Lagos!5e0!3m2!1sen!2sng!4v1487585939250" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 
