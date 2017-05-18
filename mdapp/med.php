@@ -684,10 +684,10 @@ font-weight:bolder;
 <li><a  href="../login.html">Logout</a></li>
 </ul> 
 
-</div >
+</div>
 </div>
 
-<div id="loader"></div>
+
 
 
 
@@ -848,7 +848,7 @@ background-size:contain;height:480px; background-color:#fff;color:green;border-r
 <div class="icon-cont" style="border:2px solid green ;border-radius:5px;position:relative;">
 <img src="img/muc.png" width="64" height="64" style="margin:4px auto;display:block;"><div class="overlay">
     <div class="text">---</div>
-  </div></div> Percentage Muscle</div
+  </div></div> Percentage Muscle</div>
 
 
 </div>
@@ -935,7 +935,7 @@ background-size:contain;height:480px; background-color:#fff;color:green;border-r
 
 </div>
 
-
+<div id="loader"></div>
 <!--
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
