@@ -8,16 +8,19 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/css.css" rel="stylesheet">
-     <!--<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet"> -->
-     <link href="css/thumbnail-gallery.css" rel="stylesheet">
-        <link href="http://allfont.net/allfont.css?fonts=agency-fb" rel="stylesheet" type="text/css" />
-  
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <link href="http://allfont.net/allfont.css?fonts=agency-fb" rel="stylesheet" type="text/css" />-->
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
+
+
+<script src="scripts/jquery-1.11.0.min.js"></script>
    
 
 
     <link href="css/carousel.css" rel="stylesheet">
         <style>
+
 
 
 
@@ -75,9 +78,6 @@ a:hover{
   text-decoration: none;
 
 }  
-
-
-  
 
 /* SHIFT */
 .nav-ban ul li a {
@@ -175,37 +175,67 @@ font-weight:bolder;
 }
 .navwrp .ul1{
       float: left;
-      margin-left:20px;
+      margin-left:10px;
        width:250px;
-      min-width:250px;
-      overflow:hidden;
+      min-width:200px;
 }
 
 .navwrp .ul0{
     float: left;
-      margin-left:200px;
+      margin-left:100px;
       width:60px;
-      margin-right:100px;
+      margin-right:50px;
       
 }
 .ul0 img{ display:block;
 margin:auto;}
+.navwrp .ul2{
+      float: right;
+ width:500px;
+      min-width:250px;
+}
 
-.navwrp .ul2{
-      float: right;
- width:700px;
-      min-width:300px;
-}
-.navwrp .ul2{
-      float: right;
- width:700px;
-      min-width:300px;
-}
 .navwrp .ul2 li {    
- margin-left:40px;  
+ margin-left:15px;  
 
        position:relative;
 }
+
+.navwrp .ul3{
+ width:150px;
+ height:180px;
+ background-color: rgba(0, 153, 51,0.9);
+ margin-top:40px;
+  position:absolute;
+  right:0%;
+  margin-right:10px;
+}
+
+.navwrp .ul3 li{
+margin-left:-20px;
+font-size:12px;
+}
+
+
+
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height:2px;
+    background-color:#b3ffb3;
+    margin: 9px auto;
+    transition: 0.4s;
+}
+
+.bar_div{
+  width:30px;
+  margin-left:10px;
+  float:right;
+   margin-right:10px;
+   display:none;
+
+}
+.ul3{ display:none;}
+
 
 .navwrp ul li {
   display: inline-block;
@@ -242,11 +272,12 @@ margin:auto;}
      font-weight:400;
 }
 .navwrp{
-   min-width:899px;
+   min-width:325px;
    width:100%;
    position:absolute;
    z-index:9;
 }
+
 
     .pro img{
 margin-right:10px;
@@ -256,22 +287,6 @@ margin-right:10px;
       font-size:13px;
     }
 
-
-@media only screen and (min-width:700px) and (max-width:995px)
-{
-
-}
-@media only screen and (min-width:400px) and (max-width:699px)
-{
-
-}
-
-
-
-@media only screen and (min-width:100px) and (max-width:399px)
-{
-
-}  
 
 
 .rss {
@@ -650,10 +665,11 @@ margin-top:20px;color:green;display:none;font-size:50px;font-weight:400;font-fam
   width: 294px;
   margin: 0 auto;
   overflow: hidden;
+  font-size:12px;
 }
 
 .slideshow-container {
-  width: 588px;
+  width: 600px;
   transition: 1s ease;
 
 }
@@ -665,9 +681,8 @@ margin-top:20px;color:green;display:none;font-size:50px;font-weight:400;font-fam
 .slide-cont {
   width: 294px;
   display: inline-block;
-position:relative
+position:relative;
   text-align: center;
-  float:left;
 }
 
 .slide {
@@ -730,11 +745,192 @@ position:relative
     top:300px;left:50%;
 }
 
+
+
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 
+.h-tips{
+  margin-top:10px;width:52%;float:left;
+}
+
+.r-side{
+ width:22%; float:left;
+}
+
+.r-side-activity{width:100%;height:250px;}
+
+.r-side-wow{width:100%; background-color:white;margin:auto;margin-bottom:20px;
+ border:1px solid #b3ffb3;border-radius:2px;
+ box-shadow: 0px 1px 1px 1px rgba(0, 153, 51,0.1);}
+
+ .chall{display:none;}
+
+ .l-side{width:26%;float:left;
+ }
+
+@media only screen and (min-width:700px) and (max-width:1200px)
+{
+
+.navwrp .ul0{
+      margin-left:60px;
+      margin-right:20px;
+      
+}
+.navwrp .ul1{
+  margin-left:0px;
+       width:100px;
+}
+.navwrp .ul2{
+width:340px;
+}
+
+.h-tips{
+  margin-top:10px;min-width:600px;margin:0 auto;float:none;
+}
+
+.r-side{
+ width:580px;float: none;margin:0 auto;height: 250px;
+}
+
+.r-side-activity{
+  width:48%;height:250px; float: left;
+  }
+.r-side-wow{display:none}
+ 
+ .chall{width:300px;margin:auto;display: inline;}
+
+ .slideshow-container {
+  width: 1190px;
+  
+  margin-top:10px;
+
+}
+.l-side{
+  display: none;
+}
+
+.slide {
+  animation: slide 20s ease infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  12.5% {
+    transform: translateX(0%);
+  }
+  
+  25% {
+    transform: translateX(-25%);
+  }
+  
+  37.5% {
+    transform: translateX(-25%);
+  }
+  
+  50% {
+    transform: translateX(-50%);
+  }
+  
+  62.5% {
+    transform: translateX(-50%);
+  }
+  
+  75% {
+    transform: translateX(-75%);
+  }
+  
+  87.5% {
+    transform: translateX(-75%);
+  }
+  
+  99% {
+    transform: translateX(0%);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+
+}
+@media only screen and (min-width:400px) and (max-width:699px)
+{
+
+
+.navwrp .ul0{
+      margin-left:50px;
+      width:60px;
+      margin-right:15px;
+      
+}
+.navwrp .ul1{
+  margin-left:0px;
+       width:100px;
+}
+.r-side{
+ width:22%; float:left; display:none
+}
+
+.l-side{
+  display: none;
+}
+
+.h-tips{
+  margin-top:10px;min-width:600px;margin:0 auto;float:none;
+}
+.navwrp .ul2{
+ display:none
+}
+
+.bar_div{
+  display:inline;
+}
+.ul3{ display: inline;}
+
+}
+
+@media only screen and (min-width:100px) and (max-width:399px)
+{
+
+.r-side{
+ width:22%; float:left; display:none
+}
+.l-side{
+  display: none;
+}
+
+.navwrp .ul0{
+    float: left;
+      margin-left:10px;
+      width:60px;
+      margin-right:0px;
+      
+}
+.navwrp .ul1{
+  
+  margin-left:0px;
+       width:100px;
+} 
+.h-tips{
+  margin-top:10px;min-width:600px;margin:0 auto;float:none;
+}
+.navwrp .ul2{
+ display:none
+}
+
+.bar_div{
+  display:inline;
+}
+
+.ul3{ display: inline;}
+}
 
 
  </style>
@@ -743,7 +939,7 @@ position:relative
 
 
 
-<div class="container-fluid">
+<div class="container-fluid" style="min-width: 700px;">
 
 <div class="nav-ban nav-ban-extra">
 <div class="navwrp">
@@ -757,12 +953,7 @@ position:relative
 </ul> 
 
 <ul class="ul2">
-<li><div id="noti_Counter1"></div><a href="#"><img src="img/mail.png"  width="23" height="23" style="">
-
-</a>
-
-
-</li>
+<li><div id="noti_Counter1"></div><a href="#"><img src="img/mail.png"  width="23" height="23" style=""></a></li>
 <li> <div id="noti_Counter"></div><a  href="#"><img src="img/bell.png" id="noti_Button" width="23" height="23" style=""></a>
 
  <div id="notifications">
@@ -772,23 +963,40 @@ position:relative
                 </div>
 </li>
 
-
 <li><a  href="#"><img src="img/settg.png"  width="23" height="23" style=""></a></li>
 <li><a  href="../login.html">Logout</a></li>
 </ul> 
 
+  <div class="bar_div"><a id="tggle" href="#">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+  </a>
+  </div>
 
-</div >
+<ul class="ul3">
+<li><div id="noti_Counter1"></div><a href="#"><img src="img/mail.png"  width="23" height="23" >&nbsp; inbox</a></li>
+<li> <div id="noti_Counter"></div><a  href="#"><img src="img/bell.png" id="
+" width="23" height="23" style="">&nbsp;notification</a>
+
+</li>
+
+<li><a  href="#"><img src="img/settg.png"  width="23" height="23" >&nbsp; settings</a></li>
+<li><a  href="../login.html">Logout</a></li>
+</ul> 
+
+</div>
 </div>
 
 
 
 
-<div class="content row" style="max-width:85%;min-width:1146px; margin:20px auto; overflow:hidden;">
+<div class="content row" style="max-width:1200px;min-width:330px; margin:20px auto; overflow:hidden;">
 
-<div class="r-side " style="width:22%; float:left;">
+<div class="r-side ">
 
-          <div class="" style="width:100%;margin: auto;height:300px;">
+          <div class="r-side-activity" >
+
           <div class="" style="width:100%;background-color:#fff;
         margin:auto;margin-bottom:10px;text-align:center"><h4> <img src="img/activity.png" width="20" height="20"> &nbsp Activity Tracker</h4></div>
           
@@ -817,9 +1025,105 @@ position:relative
             
 
                   </div>
+                  </div>
 
 
-<div class="" style="width:100%; background-color:white;margin:auto;margin-bottom:20px; border:1px solid #b3ffb3;border-radius:2px;box-shadow: 0px 1px 1px 1px rgba(0, 153, 51,0.1);"> 
+<div class="chall" >
+
+<section class="slideshow">
+  <div class="slideshow-container slide">
+
+                  <div class="slide-cont" style=" background-color:white;margin:auto;margin-bottom:20px;height:230px;
+                  box-shadow: 0px 1px 1px 1px rgba(0, 153, 51,0.1);"> 
+
+                  <div class="" style="background-image:url(img/wellness.jpg); width:100%; height:100px; 
+                  background-repeat:no-repeat;background-size:cover;">
+            
+                    <div class="ovtext" style="background-color:rgba(0, 77, 0,.7);color:white; width:100%;
+                    padding: 7px 7px;  position:relative;
+            top: 69%;text-align:center;">Wellness challenge with Dr Paul</div>
+
+
+                </div>
+                <div style="text-align:left;color:#003300;margin-left:10px;"><br>
+            <p><img src="img/time.png" width="15" height="15">&nbsp  Challenge Length : 14 Days</p>
+<p><img src="img/avatar.png" width="15" height="15">&nbsp Challenge Participants : 1,655 People</p>
+
+<a href=""><div style="height:30px;border-radius:3px;text-align:center; width:250px;margin:0 auto;padding-top:5px;background-color:green;color:white;">Join Weekly Challenge</div></a>
+</div>
+  </div>
+
+   <div class="slide-cont" style=" background-color:white;margin:auto;margin-bottom:20px;height:230px;
+                  box-shadow: 0px 1px 1px 1px rgba(0, 153, 51,0.1);"> 
+
+                  <div class="" style="background-image:url(img/fitness2.jpg); width:100%; height:100px; 
+                  background-repeat:no-repeat;background-size:cover;">
+            
+                    <div class="ovtext" style="background-color:rgba(0, 77, 0,.7);color:white; width:100%;
+                    padding: 7px 7px;  position:relative;
+            top: 69%;text-align:center;">Fitness Challenge with Coach Toyin</div>
+
+
+                </div>
+                <div style="text-align:left;color:#003300;margin-left:10px;"><br>
+            <p><img src="img/time.png" width="15" height="15">&nbsp  Challenge Length : 14 Days</p>
+<p><img src="img/avatar.png" width="15" height="15">&nbsp Challenge Participants : 1,655 People</p>
+
+<a href=""><div style="height:30px;border-radius:3px;text-align:center; width:250px;margin:0 auto;padding-top:5px;background-color:green;color:white;">Join Weekly Challenge</div></a>
+</div>
+  </div>
+
+   <div class="slide-cont" style=" background-color:white;margin:auto;margin-bottom:20px;height:230px;
+                  box-shadow: 0px 1px 1px 1px rgba(0, 153, 51,0.1);"> 
+
+                  <div class="" style="background-image:url(img/chall.jpg);   width:100%; height:100px; 
+                  background-repeat:no-repeat;background-size:cover;">
+            
+                    <div class="ovtext" style="background-color:rgba(0, 77, 0,.7);color:white; width:100%;
+                    padding: 7px 7px;  position:relative;
+            top: 69%;text-align:center;">Fitness Challenge with Dr David</div>
+
+
+                </div>
+                <div style="text-align:left;color:#003300;margin-left:10px;"><br>
+            <p><img src="img/time.png" width="15" height="15">&nbsp  Challenge Length : 14 Days</p>
+<p><img src="img/avatar.png" width="15" height="15">&nbsp Challenge Participants : 1,655 People</p>
+
+<a href=""><div style="height:30px;border-radius:3px;text-align:center; width:250px;margin:0 auto;padding-top:5px;background-color:green;color:white;">Join Monthly Challenge</div></a>
+</div>
+  </div>
+
+
+  <div class="slide-cont" style=" background-color:white;margin:auto;margin-bottom:20px;height:230px;
+                  box-shadow: 0px 1px 1px 1px rgba(0, 153, 51,0.1);"> 
+
+                  <div class="" style="background-image:url(img/fitness.jpg);  width:100%; height:100px; 
+                  background-repeat:no-repeat;background-size:cover;">
+            
+                    <div class="ovtext" style="background-color:rgba(0, 77, 0,.7);color:white; width:100%;
+                    padding: 7px 7px;  position:relative;
+            top: 69%;text-align:center;">Fitness Challenge with Dr David</div>
+
+
+                </div>
+                <div style="text-align:left;color:#003300;margin-left:10px;"><br>
+            <p><img src="img/time.png" width="15" height="15">&nbsp  Challenge Length : 14 Days</p>
+<p><img src="img/avatar.png" width="15" height="15">&nbsp Challenge Participants : 1,655 People</p>
+
+<a href=""><div style="height:30px;border-radius:3px;text-align:center; width:250px;margin:0 auto;padding-top:5px;background-color:green;color:white;">Join Monthly Challenge</div></a>
+</div>
+  </div>
+
+
+
+
+
+  </div>
+</section>
+</div>
+
+
+<div class="r-side-wow" > 
 
  <div class="" style="width:100%;background-color:#fff;color:green;
         margin: 10px auto;text-align:center; font-weight:bold;">
@@ -827,9 +1131,9 @@ position:relative
 </div>
 </div>
 
-</div></div>
+</div>
 
-<div class="h-tips"style="margin-top:10px;width:52%;float:left;">
+<div class="h-tips">
 
 
 <div class="" style="width:96%;padding-top:1px;padding-bottom:1px;background-color:white;margin:auto;margin-bottom:20px; box-shadow: 0px 1px 1px 1px rgba(0, 153, 51,0.1);
@@ -882,7 +1186,7 @@ Sharecare employee @mississippi_snow found this inspiring message on an after-wo
 
 
 
-<div class="side-nav">
+<div class="side-nav" >
 
   <div class="side" style="width:70px;height:70px;position:relative">
 <a href="health.php"><div style="border:1px solid green; border-radius:5px;width:60px;background-color:#fff; height:60px;margin-bottom:5px;">
@@ -919,7 +1223,7 @@ Sharecare employee @mississippi_snow found this inspiring message on an after-wo
 </div>
 
 
-<div class="l-side" style="width:26%;float:left;">
+<div class="l-side"  >
          
        <div class="" style="width:100%;margin:auto;">
           
@@ -1025,26 +1329,16 @@ Sharecare employee @mississippi_snow found this inspiring message on an after-wo
 </div>
 <a href=""><div style="height:30px;border-radius:3px;text-align:center; width:280px;margin:0 auto;padding-top:5px;background-color:green;color:white;">Join Challenge</div></a>
 
-
                   </div>
-
 
   </div>
 </section>
-
-
-
-
-
-                 </div>
-
+    </div>
 
 </div>
-
-
 </div>
 
-
+</div>
 
 </div>
 
@@ -1072,6 +1366,37 @@ Sharecare employee @mississippi_snow found this inspiring message on an after-wo
 
 
 <script>
+
+
+var originalWidth = $(window).width();
+$(window).bind('resize', function(e) {
+  if (window.RT) clearTimeout(window.RT);
+  window.RT = setTimeout(function() {
+    if (Math.abs($(window).width() - originalWidth) > 100) {
+      this.location.reload(false); /* false to get page from cache */
+    }
+  }, 200);
+});
+
+
+if ( $(window).width() < 1200) {      
+ 
+ $(function(){
+    $(".ul3").hide();
+   
+    $("#tggle").on("click", function(){
+       
+           $(".ul3, .menu-items2").toggle();
+    });
+    
+
+});
+
+
+} 
+else {
+  //Add your javascript for small screens here 
+}
 
 $('.count').each(function () {
     $(this).prop('Counter',0).animate({
