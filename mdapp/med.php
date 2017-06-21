@@ -654,6 +654,7 @@ font-weight:bolder;
     
 }
 
+
 .home{max-width:400px ;min-width:333px;height:500px; float:left;}
 
 .test{width:350px; background-color:white;
@@ -661,6 +662,8 @@ box-shadow: 0px 0px 5px green;padding-top:1px;padding-bottom:1px;float:left;marg
 
 .profile{width:350px; background-color:white; 
 box-shadow: 0px 0px 5px green;height:500px;padding-top:1px;float:left;margin-left:30px;}
+
+.bottom-nav{ max-width:330px; min-width:330px;height:50px;margin: 0 auto; display: none;}
 
 @media only screen and (min-width:700px) and (max-width:1200px)
 {
@@ -673,6 +676,8 @@ box-shadow: 0px 0px 5px green;margin:20px auto;padding-top:1px;padding-bottom:1p
 
 .profile{width:350px; background-color:white; margin:20px auto;
 box-shadow: 0px 0px 5px green;height:500px;padding-top:1px;float:none;}
+
+.bottom-nav{ display: inline;}
 
 .navwrp .ul0{
       margin-left:60px;
@@ -703,6 +708,8 @@ box-shadow: 0px 0px 5px green;margin:20px auto;padding-top:1px;padding-bottom:1p
 
 .profile{width:350px; background-color:white; margin:20px auto;
 box-shadow: 0px 0px 5px green;height:500px;padding-top:1px;float:none;}
+
+.bottom-nav{ display: inline;}
 
 .navwrp .ul0{
       margin-left:50px;
@@ -735,6 +742,8 @@ box-shadow: 0px 0px 5px green;margin:20px auto;padding-top:1px;padding-bottom:1p
 
 .profile{width:350px; background-color:white; margin:20px auto;
 box-shadow: 0px 0px 5px green;height:500px;padding-top:1px;float:none;}
+
+.bottom-nav{ display: inline;}
 
 .navwrp .ul0{
     float: left;
@@ -967,7 +976,7 @@ Software Developer @ Global Corporate Health Systems
 
 
 
-<div class="bottom-nav" style=" max-width:330px; min-width:330px;height:50px;margin: 0 auto">
+<div class="bottom-nav">
   <div style="margin:0 auto;max-width:200px; min-width:100px;height:40px;">
   <div style="margin-left:0px;margin-right:19px;float:left; font-size:12px;text-align:center;"><a href="#"  id="profile"><img width="35"hieght="35"  src="img/profile.png"><br><strong>profile</strong></a></div>
  <div  style="margin-left:20px;margin-right:20px;float:left; font-size:12px;text-align:center;" ><a href="#"  id="home"><img width="35"hieght="35"  src="img/action.png"><br><strong>home</strong></a></div>
