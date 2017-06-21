@@ -776,7 +776,7 @@ position:relative;
 {
 
 .navwrp .ul0{
-      margin-left:60px;
+      margin-left:40px;
       margin-right:20px;
       
 }
@@ -785,7 +785,7 @@ position:relative;
        width:100px;
 }
 .navwrp .ul2{
-width:340px;
+width:350px;
 }
 
 .h-tips{
