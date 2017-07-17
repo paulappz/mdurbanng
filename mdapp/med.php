@@ -390,7 +390,7 @@ border-top-right-radius: 10px;"> </div>
   $(window).bind('resize', function (e) {
     if (window.RT) clearTimeout(window.RT);
     window.RT = setTimeout(function () {
-      if (Math.abs($(window).width() - originalWidth) > 100) {
+      if (Math.abs($(window).width() - originalWidth) > 250) {
         this.location.reload(false); /* false to get page from cache */
       }
     }, 200);
@@ -520,6 +520,7 @@ border-top-right-radius: 10px;"> </div>
   $(document).ready(function () {
 
     // ANIMATEDLY DISPLAY THE NOTIFICATION COUNTER.
+  
     $('#noti_Counter')
       .css({ opacity: 0 })
       .text('7')              // ADD DYNAMIC VALUE (YOU CAN EXTRACT DATA FROM DATABASE OR XML).
