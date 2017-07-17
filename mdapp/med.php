@@ -314,7 +314,7 @@ Software Developer @ Global Corporate Health Systems
 
 
 
-<div class="side-nav" style="display:none">
+<div class="side-nav">
 
 <div class="side" style="width:70px;height:70px;position:relative">
 <a href="health.php"><div style="border:1px solid green; border-radius:5px;width:60px;background-color:#fff; height:60px;margin-bottom:5px;">
