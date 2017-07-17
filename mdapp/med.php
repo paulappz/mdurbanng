@@ -397,7 +397,7 @@ border-top-right-radius: 10px;"> </div>
   });
 
 
-  if ($(window).width() < 700) {
+  if ($(window).width() < 1200) {
 
     $(function () {
       $(".ul3").hide();
