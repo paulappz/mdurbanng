@@ -1,225 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>MDUrban</title>
 
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/css.css" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
-        <link href="css/thumbnail-gallery.css" rel="stylesheet">
-       <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+    <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    <link href="css/thumbnail-gallery.css" rel="stylesheet">
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
+    <script src="https://www.youtube.com/iframe_api?v=2.9.4" id="YTAPI"></script>
+    <script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflQKB5wA/www-widgetapi.js" async="" style=""></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
     <link href="css/carousel.css" rel="stylesheet">
-        <style>
-              
- h1{
-font-size: 4vw; text-align: center;color:green;background-color: rgba(0, 0, 0,.1);
-}
-  .container-fluid{
- background-color: green;
-    text-decoration:none;
-    color:white;
-  }
+    <link href="css/css.css" rel="stylesheet">
 
-ul li{   color:white;
-  }
+    <style>
 
-.navbar-inverse .navbar-nav>li>a {
-    color: white;
-}
+    </style>
+</head>
 
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    color: #00e600;
-    background-color: transparent;
-}
-.container h1{
-font-size:18px;
-}
+<body>
 
-.service li, .txt{
-color:green;
-font-size:16px;
-}
- </style>
-  </head>
-  <body>
+    <div class="container-fluid">
 
-<nav class="navbar navbar-inverse " style='
-  box-shadow: 0px 5px 0px rgba(0, 153, 51,0.4);   '>
-  <div class="container-fluid"style="color:white;" >
-    <div class="navbar-header" >
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <nav class="navbar navbar-inverse">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html" style="margin-left:20px;padding-top:7px;"><img src="mdapp/img/logo3.png" width=37; height="37"></a>
+                <div class="navbar-brand"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+                <ul class="nav navbar-nav topBotomBordersOut">
+                    <li>
+                        <a href="index.html" class="glyphicon glyphicon-home"></a>
+                    </li>
+                    <li><a class="about" href="about.html">About</a></li>
+                    <li class="active"><a href="#">Services</a></li>
+                    <li><a href="#patners">Partners</a></li>
+                    <li><a href="index.html">Community Outreach</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right topBotomBordersOut" style="margin-right:30px;">
+                    <li><a href="login.html" class="">Login</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="map map-serv" style="background-image: url(img/djll.png); background-repeat: no-repeat;
+ width: 100%;height: 450px;background-size: cover;">
+
+            <h1>Services</h1>
+
+        </div>
+
+
+
+        <div class="row abtpad">
+            <h1> Experience wellness services at its best.</h1>
+
+            <div class="col-lg-4 abtmag">
+                <div class="innerabt">
+                    <h2>Just for you</h2>
+                    <hr width="100%">
+                    <p> Fill a health form on or before you arrive, providing information on your current activities: eating habits, sleep patterns, and overall wellness goals. Starting with this level of personalization ensures that you will receive a customized
+                        experience and leave with an individualized or corporate plan to help you achieve your wellness goals.</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 abtmag">
+                <div class="innerabt">
+                    <h2>Personalized Wellness Plan</h2>
+                    <hr width="100%">
+                    <p> Leave with a detailed analysis of your health and strategies to improve your well-being. Engage with your personalized health and wellness coach to create a personal nutrition plan and fitness plan tailored to your lifestyle. We offer
+                        Corporate and individual therapeutic massage that could come as an in-house service rendered by our mobile wellness team. This personalized, easy-to-read plan, developed by MDUrban physicians and experts, will empower you to succeed.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 abtmag">
+                <div class="innerabt">
+                    <h2>Advanced Assessment</h2>
+                    <hr width="100%">
+                    <p> Receive a personal wellness assessment with a MDUrban range of interpretation, delivered to you by trusted experts. If your assessment does reveal any urgent or emerging medical concerns, we will coordinate your care with appropriate
+                        MDUrban specialists.</p>
+                    <p>
+                        <ol>
+                            <li>Biometric Evaluation</li>
+                            <li>Body Composition Scan</li>
+                            <Li>Blood Test</Li>
+                            <li>Lipid Profile</li>
+                            <li>Movement Assessment</li>
+                            <li>Strength Assessment</li>
+                        </ol>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 abtmag">
+                <div class="innerabt">
+                    <h2>MDUrban Certified Wellness Coach</h2>
+                    <hr width="100%">
+                    <p> Engage your personal coach in one-on-one sessions where you are able to express your goals and challenges in confidentiality. Learn techniques and tips in the areas of meditation, nutrition, physical activity, relaxation, and more.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4 abtmag">
+                <div class="innerabt">
+                    <h2>Expert Guidance</h2>
+                    <hr width="100%">
+                    <p> MDUrban experts will take the time to listen to and answer your questions, assuring that you gain personalized knowledge and equipments to apply to your health and well-being.
+                    </p>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 abtmag">
+                <div class="innerabt">
+                    <h2>Progressive Support</h2>
+                    <hr width="100%">
+                    <p> Maintain a strong connection to your MDUrban team who will continue to support you on your journey when you return home. Your team will help you stay motivated and on track.
+                    </p>
+
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 abtmag">
+                <div class="innerabt">
+                    <h2>Access to Wellness Record</h2>
+                    <hr width="100%">
+                    <p>Support your life-long wellness journey with continued access to your Wellness Assessment.</p>
+
+
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar"  style="margin-left:20px;">
-    
-       <ul   class="nav navbar-nav" >
-  <li><a  href="index.html" class="glyphicon glyphicon-home"></a></li>
-<li><a href="about.html">About</a></li>
-<li><a  href="service.html">Services</a></li>
-<li><a  href="#">Partners</a></li>
-<li><a  href="#">FAQ</a></li>
-<li><a  href="contact.html">Contact</a></li>
-</ul> 
-      <ul class="nav navbar-nav navbar-right"  style="margin-right:50px;">
-  <li><a  href="#" class="glyphicon glyphicon-earphone"></a></li>
-<li><a href="login.html" class="">Login</a></li>
 
-</ul> 
+    <div id="contact">
 
-      </ul>
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1406550039187!2d3.3492668141895505!3d6.50387269529538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c3d9d91428d%3A0xd2a1f6a1f08e8027!2s68+Ogunlana+Dr%2C+Lagos!5e0!3m2!1sen!2sng!4v1487585939250"
+                width="100%" height="100%" frameborder="0" style="border:0" scrolling="no" allowfullscreen style="pointer-events:none;"></iframe>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <h1>Contact Us</h1>
+                    <h4 style="text-align:center">We'd love to hear from you!</h4>
+                    <div class="topBotomBordersOut"><a class="btn" href="#" data-toggle="modal" data-target="#con">>>==>></a></div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <h1>Partner with Us</h1>
+                    <h4 style="text-align:center">We'd love to partner with you!</h4>
+                    <div class="topBotomBordersOut"><a class="btn" href="#" data-toggle="modal" data-target="#patn">>>==>></a></div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
-  </div>
-</nav>
 
+    <div class=" modal fade" role="dialog" id="con">
 
-<div class="map map-serv" style="margin-top: -35px; background-image: url(img/djll.png); background-repeat: no-repeat;
- width: 100%;height: 450px;background-size: cover;" >
- 
-        <h1>Services</h1>
-  
-   
-    
+        <div class="container">
+            <div class="row">
+
+                <h1>Contact us</h1>
+            </div>
+            <div class="row">
+                <h4 style="text-align:center">We'd love to hear from you!</h4>
+            </div>
+            <div class="row input-container">
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input type="text" required />
+                        <label>Name</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input">
+                        <input type="text" required />
+                        <label>Email</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input" style="float:right;">
+                        <input type="text" required />
+                        <label>Phone Number</label>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea required></textarea>
+                        <label>Message</label>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-centered">
+                    <span class="btn-lrg submit-btn">Send Message</span>
+                    <span type="button" class="close" data-dismiss="modal">Close</span>
+                </div>
+
+            </div>
+        </div>
+
     </div>
-  <h1>  Experience wellness services at its best.</h1>
-<div class="row serv "  style="color:green;">
+
+    <div class="modal fade" role="dialog" id="patn">
 
 
-<div class="serv-inn">
+        <div class="container">
+            <div class="row">
 
-<div class="col-md-4 serv-info">
-<div class="serv-info-inn">
-<h2>Just for you</h2>
+                <h1>Partner with Us</h1>
+            </div>
+            <div class="row">
+                <h4 style="text-align:center">We'd love to partner with you!</h4>
+            </div>
+            <div class="row input-container">
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input type="text" required />
+                        <label>Name</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input">
+                        <input type="text" required />
+                        <label>Email</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input" style="float:right;">
+                        <input type="text" required />
+                        <label>Phone Number</label>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea required></textarea>
+                        <label>Message</label>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-centered">
+                    <span class="btn-lrg submit-btn">Send Message</span>
+                    <span style="color: green;" type="button" class="close" data-dismiss="modal">Close</span>
+                </div>
 
-Fill a health form on or before you arrive, providing information on your current activities: eating habits, sleep patterns, and overall wellness goals.
-Starting with this level of personalization ensures that you will receive a customized experience and leave with an individualized or corporate plan to help you achieve your wellness goals.
-</div>
-</div>
+            </div>
+        </div>
 
-<div class="col-md-4 serv-info">
-<div class="serv-info-inn">
-<h2>Access to Wellness Record</h2>
-
-Support your life-long wellness journey with continued access to your Wellness Assessment.
-</div>
-</div>
-
-
-<div class="col-md-4 serv-info">
-<div class="serv-info-inn">
-<h2>MDUrban Certified Wellness Coach</h2>
-
-Engage your personal coach in one-on-one sessions where you are able to express your goals and challenges in confidentiality. Learn techniques and tips in the areas of meditation, nutrition, physical activity, relaxation, and more.
-</div>
-</div>
-
-</div>
-
-
-
-<div class="serv-inn">
-
-<div class="col-md-4 serv-info" >
-<div class="serv-info-inn">
-<h2>Advanced Assessment</h2>
-
-Receive a personal wellness assessment with a MDUrban range of interpretation, delivered to you by trusted experts. 
-If your assessment does reveal any urgent or emerging medical concerns, 
-we will coordinate your care with appropriate MDUrban specialists.
-<ul>
-    <li>Biometric Evaluation</li>
-<li>Body Composition Scan</li>
-<Li>Blood Test</Li>
-<li>Lipid Profile</li>
-<li>Movement Assessment</li>
-<li>Strength Assessment</li>
-</ul>
-                                                                                                                                                                                            
-</div>
-</div>
+    </div>
 
 
-<div class="col-md-4 serv-info" >
-<div class="serv-info-inn">
-<h2>Expert Guidance</h2>
+    <div class="footer">
+        <div class="row">
 
+            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+                <div class="row">
+                    <h5><strong> Quicklinks</strong> </h5>
+                    <ul class="col-md-12 fot">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">FAQ</a></li>
 
-MDUrban experts will take the time to listen to and answer your questions, assuring that you gain personalized knowledge and equipments to apply to your health and well-being.
-</div>
-</div>
+                    </ul>
+                </div>
+            </div>
 
-<div class="col-md-4 serv-info">
-<div class="serv-info-inn">
-<h2>Personalized Wellness Plan</h2>
+            <div class=" col-md-4 col-sm-4 col-lg-4 col-xs-4">
+                <div class="row">
+                    <h5> <strong>Office Address</strong> </h5>
+                    <ul class="col-md-12 add">
+                        <li><a href="#contact">Address: 85, Ogunlana drive, Adeniran Ogunsanya, Surelere,Lagos. </a></li>
 
-Leave with a detailed analysis of your health and strategies to improve your well-being. Engage with your personalized health and wellness coach to create a personal nutrition plan and fitness plan tailored to your lifestyle. 
-We offer Corporate and individual therapeutic massage that could come as an in-house service rendered by our mobile wellness team. This personalized, easy-to-read plan, developed by MDUrban physicians and experts, will empower you to succeed.
-</div>
-</div>
-</div>
+                    </ul>
+                </div>
+            </div>
 
-<div class="col-md-4 serv-info" >
-<div class="serv-info-inn">
-<h2>Progressive Support</h2>
+            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+                <div class="row">
+                    <h5> <strong>Socials</strong></h5>
+                    <ul class="col-md-12">
+                        <li>
+                            <a href="#"><img src="img/fbk1.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/gmail1.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/twitter1.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/insta-a1.png"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/linkedin1.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-Maintain a strong connection to your MDUrban team who will continue to support you on your journey when you return home. Your team will help you stay motivated and on track.
-</div>
-</div>
+        </div>
+    </div>
 
-
-
-
-
-
-</div>
-
-
-<div id="loader"></div>
-
-</div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-  </body>
+    <script src="js/js.js "></script>
+</body>
+
 </html>
 
 
 <script>
-
-
-
-var $loading = $('#loader').hide();
-$(document)
-  .ajaxStart(function () {
-    $loading.show();
-  })
-  .ajaxStop(function () {
-    $loading.hide();
-  });
-
-
-
+    var $loading = $('#loader').hide();
+    $(document)
+        .ajaxStart(function() {
+            $loading.show();
+        })
+        .ajaxStop(function() {
+            $loading.hide();
+        });
 </script>

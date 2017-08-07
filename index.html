@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,432 +13,521 @@
     <link href="css/thumbnail-gallery.css" rel="stylesheet">
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <script src="js/ie-emulation-modes-warning.js"></script>
+    <script src="https://www.youtube.com/iframe_api?v=2.9.4" id="YTAPI"></script>
+    <script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflQKB5wA/www-widgetapi.js" async="" style=""></script>
 
     <link href="css/carousel.css" rel="stylesheet">
-     <style>
+    <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: https://www.jssor.com -->
+    <script src="js/jssor.slider-25.2.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
 
-  .container-fluid{
- background-color: green;
-    text-decoration:none;
-    color:white;
-  }
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $FillMode: 2,
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
 
-ul li{   color:white;
-  }
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
-.navbar-inverse .navbar-nav>li>a {
-    color: white;
-}
+            //make sure to clear margin of the slider container element
+            jssor_1_slider.$Elmt.style.margin = "";
 
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    color: #00e600;
-    background-color: transparent;
-}
-.container h1{
-font-size:18px;
-}
+            /*#region responsive code begin*/
+            //the following code is to fill jssor slider in parent container in cover mode
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+                if (containerWidth) {
+                    var containerHeight = containerElement.clientHeight;
 
-.service li, .txt{
-color:green;
-font-size:16px;
-}
+                    var MAX_HEIGHT = 635;
+                    var MAX_WIDTH = 1400;
 
-  .small{    position:relative; display:none;
-}
-.main{
-  
-}
+                    var expectedHeight = containerHeight;
+                    var expectedWidth = containerWidth;
 
+                    expectedHeight = expectedHeight || jssor_1_slider.$OriginalHeight();
+                    if (MAX_HEIGHT) {
+                        expectedHeight = Math.min(MAX_HEIGHT, expectedHeight);
+                    }
 
+                    if (MAX_WIDTH) {
+                        expectedWidth = Math.min(MAX_WIDTH, expectedWidth);
+                    }
 
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
+                    //scale the slider to exact size of parent container
+                    jssor_1_slider.$ScaleSize(expectedWidth, expectedHeight);
 
-.small, .main {  
-  /* This section calls the slideInFromLeft animation we defined above */
-  animation: 5s ease-out 0s 1 slideInFromLeft;
- 
-}
+                    //place slider at center in vertical direction
+                    jssor_1_slider.$Elmt.style.top = ((containerHeight - expectedHeight) / 2) + "px";
 
+                    //place slider at center in horizontal direction
+                    jssor_1_slider.$Elmt.style.left = ((containerWidth - expectedWidth) / 2) + "px";
+                } else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
 
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
 
+    </style>
+</head>
 
+<body>
 
+    <div class="container-fluid">
 
+        <nav class="navbar navbar-inverse">
 
-
-@media only screen and (max-width : 1200px) {
-
- .small{
-
-}
-.main{
-
-}
-
-}
-
-@media only screen and (max-width : 979px) {
-
- .small{
-  position:relative; display:none;
-}
-.main{
-
-}
-}
-
-@media only screen and (max-width : 767px) {
-
-.small{position:relative; display:initial;
-}
-.main{
-    position:relative; display:none;
-}
-}
-
-@media only screen and (max-width : 480px) {
-.small{
-}
-.main{
-    position:relative; display:none;
-}
-}
-
-@media only screen and (max-width : 320px) {
-  .small{
-}
-.main{
-    position:relative; display:none;
-}}
-
-
-  </style>
-  </head>
-  <body>
-
-
-
-<nav class="navbar navbar-inverse " style='
-  box-shadow: 0px 5px 0px rgba(0, 153, 51,0.4);   '>
-  <div class="container-fluid"style="color:white;" >
-    <div class="navbar-header" >
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#" style="margin-left:20px;padding-top:7px;"><img src="mdapp/img/logo3.png" width=37; height="37"></a>
+                <div class="navbar-brand"></div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+                <ul class="nav navbar-nav topBotomBordersOut">
+                    <li class="active">
+                        <a href="#" class="glyphicon glyphicon-home"></a>
+                    </li>
+                    <li><a class="about" href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#patners">Partners</a></li>
+                    <li><a href="#co">Community Outreach</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right topBotomBordersOut" style="margin-right:30px;">
+                    <li><a href="login.html" class="">Login</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+
+
+        <div id="hero">
+
+            <div style="position:relative;top:0;left:0;width:100%;height:100%;overflow:hidden;">
+                <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1400px;height:635px;overflow:hidden;visibility:hidden;">
+                    <!-- Loading Screen -->
+                    <div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;text-align:center;background-color:rgba(0,0,0,0.7);">
+                        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/double-tail-spin.svg" />
+                    </div>
+                    <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1400px;height:635px;overflow:hidden;">
+                        <div>
+                            <img data-u="image" src="img/fruits.jpg" />
+                            <div style="position:absolute;top:235px;left:372px;width:700px;height:100px;z-index:0;background-color:rgba(0,51,0,0.7);font-family:Jura;font-size:50px;font-weight:bolder;color:#c8f4bd;line-height:50px;text-align:center;">Diet and Nutritional Plans for a Healthy Lifestyle</div>
+                            <img style="position:absolute;top:280px;left:1009px;width:50px;height:50px;z-index:0;" src="img/logo3.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/wellness.jpg" />
+                            <div style="position:absolute;top:250px;left:345px;width:700px;height:100px;z-index:0;background-color:rgba(0,51,0,0.7);font-family:Jura;font-size:50px;font-weight:bolder;color:#c8f4bd;line-height:50px;text-align:center;">Fitness Plan for the Mind Body and Soul</div>
+                            <img style="position:absolute;top:295px;left:990px;width:50px;height:50px;z-index:0;" src="img/logo3.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/emwell.jpg" />
+                            <div style="position:absolute;top:367px;left:356px;width:700px;height:200px;z-index:0;background-color:rgba(0,51,0,0.7);font-family:Jura;font-size:50px;font-weight:bolder;color:#c8f4bd;line-height:50px;text-align:center;">Corporate Wellness Packages for Corporations, Organizations and Institutions.</div>
+                            <img style="position:absolute;top:508px;left:999px;width:50px;height:50px;z-index:0;" src="img/logo3.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/bg11.jpeg" />
+                            <div style="position:absolute;top:299px;left:322px;width:755px;height:150px;z-index:0;background-color:rgba(0,51,0,0.7);font-family:Jura;font-size:50px;font-weight:bolder;color:#c8f4bd;line-height:50px;text-align:center;">When " I " is replaced by " WE ', even ILLNESS become WELLNESS</div>
+                            <img style="position:absolute;top:394px;left:1013px;width:50px;height:50px;z-index:0;" src="img/logo3.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/bg.jpg" />
+                            <div style="position:absolute;top:385px;left:322px;width:760px;height:220px;z-index:0;background-color:rgba(0,51,0,0.7);font-family:Jura;font-size:50px;font-weight:bolder;color:#c8f4bd;line-height:50px;text-align:center;">Health, Medical and Insurance Packages for Corporate Bodies, Organizations, Institutions and Individuals</div>
+                            <img style="position:absolute;top:543px;left:1032px;width:50px;height:50px;z-index:0;" src="img/logo3.png" />
+                        </div>
+                        <div>
+                            <img data-u="image" src="img/842x342-missions-medicalmission.jpg" />
+                            <img style="position:absolute;top:279px;left:541px;width:305px;height:250px;z-index:0;background-color:rgba(0,51,0,0.3);" src="img/coutreachlogo.png" />
+                        </div>
+                        <a data-u="any" href="https://www.jssor.com" style="display:none">carousel html</a>
+                    </div>
+                    <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb051" style="position:absolute;bottom:12px;right:12px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+                        <div data-u="prototype" class="i" style="width:16px;height:16px;">
+                            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                    </svg>
+                        </div>
+                    </div>
+                    <!-- Arrow Navigator -->
+                    <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+                </svg>
+                    </div>
+                    <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+                        <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+                </svg>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                jssor_1_slider_init();
+            </script>
+            <!-- #endregion Jssor Slider End -->
+
+
+        </div>
+
+        <div id="about">
+            <div class="overlay">
+                <div class="row featurette row-centered aboutdiv ">
+                    <div class="col-md-8  col-sm-8 col-lg-8 col-centered">
+                        <div style="max-width:700px;margin:0 auto;text-align:left;">
+                            <span class="about1">MD URBAN</span> <span class="about2"> web based platform which Offers a Self Sustainable Public Health And Preventive Care Delivery System that is Religious and Cultural sensitive</span>
+
+                            <ul class="abtul">
+                                <li> Health and Medical services.&nbsp; </li>
+
+                                <li> Health Insurance Services.</li>
+
+                                <li> Access to foreign medical specialists around the world.</li>
+
+                                <li> E-commerce.</li>
+                            </ul>
+
+                            <p><a class="btn topBotomBordersOut" href="about.html">more details »</a>
+                                <p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4  col-centered">
+                        <img class="featurette-image img-responsive center-block " data-src="holder.js/700x700/auto" alt="500x500" src="img/company2.png" width="250" height="250" data-holder-rendered="true">
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <div id="service">
+            <div class="row row-centered">
+
+                <div class="col-lg-12 col-centered ">
+                    <h2 class="page-header">Services</h2>
+                </div>
+                <div class="col-lg-12 col-centered">
+
+
+                    <div class="col-lg-3 col-md-4 col-xs-6 col-centered margbottom">
+                        <div class="imgcontainer">
+                            <img class="img-responsive image" src="img/tb1.jpg" alt=" ">
+                            <div class="overlay2">
+                                <div class="text">Nutrition</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-xs-6 col-centered margbottom">
+                        <div class="imgcontainer">
+                            <img class="img-responsive image" src="img/tb2.jpg" alt=" ">
+                            <div class="overlay2">
+                                <div class="text">Insurance</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-xs-6 col-centered margbottom">
+                        <div class="imgcontainer">
+                            <img class="img-responsive image" src="img/tb3.jpg" alt=" ">
+                            <div class="overlay2">
+                                <div class="text">Fitness</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-4 col-xs-6 col-centered margbottom">
+                        <div class="imgcontainer">
+                            <img class="img-responsive image" src="img/doc.jpg" alt=" ">
+                            <div class="overlay2">
+                                <div class="text">Diagnostic</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-12 col-centered ">
+                    <h2 class="page-footer"><a class="btn" href="service.html">more details »</a></h2>
+                </div>
+
+            </div>
+        </div>
+        <div id=co "" style="background-color:#001a00; color:#ccc;padding:30px;">
+            <div class="row featurette row-centered ">
+
+                <div class="col-md-3 col-lg-2  col-centered">
+                    <img class="featurette-image img-responsive " style="margin:auto;display:block;" data-src="holder.js/700x700/auto" alt="500x500" src="img/coutreachlogo.png" data-holder-rendered="true" width="300" height="300">
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-centered">
+                    <div class="row row-centered">
+                        <div class="col-md-12 col-lg-12  col-centered" style="text-align:center;margin-bottom:5px;">
+                            <h4>Community Health and Wellness Initiative.</h4>
+                        </div>
+                        <div class="col-md-12 col-lg-12  col-centered"><img style="display:block;margin:auto;margin-bottom:5px;" class="img-responsive img-circle img-thumbnail" src="img/coci.jpg" width="300" height="300"></div>
+                        <div class="col-md-12 col-lg-12  col-centered" style="text-align:left;">Promoting health and wellness through community wellness events consisting of health and wellness screening, fitness session and health talk
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-centered">
+                    <div class="row row-centered">
+                        <div class="col-md-12 col-lg-12 col-centered" style="text-align:center;margin-bottom:5px;">
+                            <h4>Campus Community Partnerships</h4>
+                        </div>
+                        <div class="col-md-12 col-lg-12"><img style="display:block;margin:auto;margin-bottom:5px;" class="img-responsive img-circle img-thumbnail" src="img/cocampus.jpg" width="300" height="300"></div>
+                        <div class="col-md-12 col-lg-12 col-centered" style="text-align:left;">Campus community partnerships for health and wellness hosting workshop on diet and nutrition and urban vegetables gardening for pre schoolers up to college students </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3 col-centered">
+                    <div class="row row-centered">
+                        <div class="col-md-12 col-lg-12 col-centered" style="text-align:center;margin-bottom:5px;">
+                            <h4>Community sports and wellness initiative.</h4>
+                        </div>
+                        <div class="col-md-12 col-lg-12"><img style="display:block;margin:auto;margin-bottom:5px;" class="img-responsive img-circle img-thumbnail" src="img/coblack.jpg" width="300" height="300"></div>
+                        <div class="col-md-12 col-lg-12 col-centered" style="text-align:left;">Promoting health and wellness through soccer and basketball in various community game parks consisting of health and wellness screening, playing a game of soccer or basketball, serving fresh fruits and water after game and giving
+                            health talks. </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div id="contact">
+
+            <div class="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.1406550039187!2d3.3492668141895505!3d6.50387269529538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c3d9d91428d%3A0xd2a1f6a1f08e8027!2s68+Ogunlana+Dr%2C+Lagos!5e0!3m2!1sen!2sng!4v1487585939250"
+                    width="100%" height="100%" frameborder="0" style="border:0" scrolling="no" allowfullscreen style="pointer-events:none;"></iframe>
+
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <h1>Contact Us</h1>
+                        <h4 style="text-align:center">We'd love to hear from you!</h4>
+                        <div class="topBotomBordersOut"><a class="btn" href="#" data-toggle="modal" data-target="#con">>>==>></a></div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-6">
+                        <h1>Partner with Us</h1>
+                        <h4 style="text-align:center">We'd love to partner with you!</h4>
+                        <div class="topBotomBordersOut"><a class="btn" href="#" data-toggle="modal" data-target="#patn">>>==>></a></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class=" modal fade" role="dialog" id="con">
+
+            <div class="container">
+                <div class="row">
+
+                    <h1>Contact us</h1>
+                </div>
+                <div class="row">
+                    <h4 style="text-align:center">We'd love to hear from you!</h4>
+                </div>
+                <div class="row input-container">
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <input type="text" required />
+                            <label>Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="styled-input">
+                            <input type="text" required />
+                            <label>Email</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="styled-input" style="float:right;">
+                            <input type="text" required />
+                            <label>Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <textarea required></textarea>
+                            <label>Message</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-centered">
+                        <span class="btn-lrg submit-btn">Send Message</span>
+                        <span type="button" class="close" data-dismiss="modal">Close</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="modal fade" role="dialog" id="patn">
+
+
+            <div class="container">
+                <div class="row">
+
+                    <h1>Partner with Us</h1>
+                </div>
+                <div class="row">
+                    <h4 style="text-align:center">We'd love to partner with you!</h4>
+                </div>
+                <div class="row input-container">
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <input type="text" required />
+                            <label>Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="styled-input">
+                            <input type="text" required />
+                            <label>Email</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="styled-input" style="float:right;">
+                            <input type="text" required />
+                            <label>Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="styled-input wide">
+                            <textarea required></textarea>
+                            <label>Message</label>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-centered">
+                        <span class="btn-lrg submit-btn">Send Message</span>
+                        <span style="color: green;" type="button" class="close" data-dismiss="modal">Close</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+                    <div class="row">
+                        <h5><strong> Quicklinks</strong> </h5>
+                        <ul class="col-md-12 fot">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">FAQ</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class=" col-md-4 col-sm-4 col-lg-4 col-xs-4">
+                    <div class="row">
+                        <h5> <strong>Office Address</strong> </h5>
+                        <ul class="col-md-12 add">
+                            <li><a href="#contact">Address: 85, Ogunlana drive, Adeniran Ogunsanya, Surelere,Lagos. </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4 col-lg-4 col-xs-4">
+                    <div class="row">
+                        <h5> <strong>Socials</strong></h5>
+                        <ul class="col-md-12">
+                            <li>
+                                <a href="#"><img src="img/fbk1.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/gmail1.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/twitter1.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/insta-a1.png"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/linkedin1.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar"  style="margin-left:20px;">
-    
-       <ul   class="nav navbar-nav" >
-  <li><a  href="#" class="glyphicon glyphicon-home"></a></li>
-<li><a href="about.html">About</a></li>
-<li><a  href="service.html">Services</a></li>
-<li><a  href="#">Partners</a></li>
-<li><a  href="#">FAQ</a></li>
-<li><a  href="contact.html">Contact</a></li>
-</ul> 
-      <ul class="nav navbar-nav navbar-right"  style="margin-right:50px;">
-  <li><a  href="#" class="glyphicon glyphicon-earphone"></a></li>
-<li><a href="login.html" class="">Login</a></li>
-
-</ul> 
-
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-<div class="small">
- <div id="myCarousel  disp1" class="carousel slide " data-ride="carousel" style="margin-top:-15px;height:350px;">
-  
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-         <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active" style="height:350px;">
-          <img class="first-slide" style="height:350px;" src="img/bg2c.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption" >
-              <h1><strong>Health, Medical and Insurance Packages for Corporate Bodies, Organizations, Institutions and Individuals</strong></h1>
-              <br>
-              <p><a class="btn btn-lg" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-      <div class="item " style="height:350px;">
-          <img class="second-slide" style="height:350px;" src="img/bg4.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1><strong>Diet and Nutritional Plans for a Healthy Lifestyle.</strong></h1>
-              <br>
-              <p><a class="btn btn-lg" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-     <div class="item " style="height:350px;">
-          <img class="third-slide" style="height:350px;"src="img/bg3.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1><strong>Fitness Plan for the Mind Body and Soul.</strong></h1>
-               <br>
-              <p><a class="btn btn-lg" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-         <div class="item " style="height:350px;">
-          <img class="fourth-slide" style="height:350px;" src="img/bg5.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1><strong>Corporate Wellness Packages for Corporations, Organizations and Institutions.</strong></h1>
-            <br>
-              <p><a class="btn btn-lg" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-     </div>
-
-
-
-
-<div  class="main">
-    <div id="myCarousel  disp2" class="carousel slide " data-ride="carousel" style="margin-top:-15px;">
-  
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-         <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="img/bg2a.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1><strong>Health, Medical and Insurance Packages for Corporate Bodies, Organizations, Institutions and Individuals</strong></h1>
-              <br>
-              <p><a class="btn btn-lg" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="second-slide" src="img/bg4.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1><strong>Diet and Nutritional Plans for a Healthy Lifestyle.</strong></h1>
-              <br>
-              <p><a class="btn btn-lg" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="img/bg3.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1><strong>Fitness Plan for the Mind Body and Soul.</strong></h1>
-               <br>
-              <p><a class="btn btn-lg" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-         <div class="item">
-          <img class="fourth-slide" src="img/bg5.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1><strong>Corporate Wellness Packages for Corporations, Organizations and Institutions.</strong></h1>
-            <br>
-              <p><a class="btn btn-lg" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
-</div>
-
-
-<div class="row service">
-<div class="col-xs-12 col-sm-12 col-lg-12 service-inn">
-<div class="txt">
- <strong> MD URBAN, a web based platform which Offers a Self Sustainable Public Health And Preventive Care Delivery System that is Religious and Cultural sensitive. 
-<br><br>
-Goals and Objectives are:
-<br>
-<ul ><li>Increase Awareness</li>
-<li> Health and Vitality</li>
-<li>Disease reduction. </li>
-<li>Increase Life expectancy</li>
-<li>Creating a Culture of Wellness</li>
-</ul> </strong> 
-</div>
-
-</div>
-
-</div>
-
-
-        <div class="row serv-ban">
-
-            <div class="col-lg-12 ">
-                <h2 class="page-header serv-ban-inn">Services</h2>
-            </div>
- 
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-        <a class="thumbnail" href="#"><strong>Nutrition</strong>
-                    <img class="img-responsive" src="img/tb1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><strong>Insurance</strong>
-                    <img class="img-responsive" src="img/tb2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><strong>Fitness</strong>
-                    <img class="img-responsive" src="img/tb3.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#"><strong>Assessment & Diagnostic</strong>
-                    <img class="img-responsive" src="img/tb4.jpg" alt="">
-                </a>
-            </div>
-           
-        </div>
-
-
-
-
-<div class="row  ads-ban">
-  <div   style="width:80%;font-size:20px;color:white;font-weight:bolder;margin:20px auto;">
-<img  src="img/logo3.png" width="60" height="60">
-
-MD urban Web Platform View from Sign-Up session to Medical Session
-  </div>
-<div cass="row"style="margin:auto;padding-left:30px;padding-right:30px" >
-
-
-         <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 thumb">   <img src="img/signup-view.png" class="img-responsive" >   </div>
-
-   <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 thumb">  <img src="img/login-view.png" class="img-responsive" >  </div>
-
-       <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 thumb">     <img src="img/home-page.png" class="img-responsive" > </div>
-
-
-             <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 thumb">   <img src="img/login-view.png" class="img-responsive" >  </div>
-
-      <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 thumb">    <img src="img/health-view.png" class="img-responsive" >     </div>
-
-    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-6 thumb">       <img src="img/med-view.png" class="img-responsive" >      </div>
-
-</div>
-</div>
-        <div class="foot">
-          <div class="foot-inn">
-
-
-    <div class="foot-inn-inn">
-          <div class="lin-k"> 
-               
-              <div class="qlink col-md-4 col-sm-4 col-lg-4 col-xs-4" >
-                      <div class="qlbtn">Quicklinks</div>
-                      <br>
-                      <ul class="col-md-12">
-                        <li ><a href="#">Home</a></li>
-                        <li ><a href="#">About</a></li>
-                        <li ><a href="#">Services</a></li>
-                        <li ><a href="#">Clients</a></li>
-                        <li ><a href="#">Partners</a></li>
-                        <li ><a href="#">FAQ</a></li>
-                        
-                        </ul>
-              </div>
-              
-              <div class="qlink col-md-4 col-sm-4 col-lg-4 col-xs-4">
-                      <div class="qlbtn">Contact</div>
-                      <br>
-                      <ul class="col-md-12">
-                        <li ><a href="#">Address: 85, Ogunlana drive, Adeniran Ogunsanya, Surelere,Lagos. </a></li>
-                        <li ><a href="#"></a></li>
-                        </ul>
-              </div>
-
-              <div class="qlink col-md-4 col-sm-4 col-lg-4 col-xs-4">
-<div class="qlbtn" >Socials</div>
-                      <br>
-        <ul class="col-md-12 soc">
-                        <li ><a href="#"><img src="img/fbk1.png"></a></li>
-                        <li ><a href="#"><img src="img/gmail1.png"></a></li>
-                        <li ><a href="#"><img src="img/twitter1.png"></a></li>
-                        <li ><a href="#"><img src="img/insta-a1.png"></a></li>
-                        <li ><a href="#"><img src="img/linkedin1.png"></a></li>
-                        </ul>
-
-              </div>
-
-          </div>
-        </div>
-
-
-</div>
-
-
-  
-<div id="loader"></div>
-
-</div>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/js.js "></script>
+
+</body>
+
 </html>
 
 <script>
+    /* $(window).scroll(function() {
+                                                //  console.log($(window).scrollTop());
+                                                var topDivHeight = $(".navbar ").height();
+                                                var viewPortSize = $(window).height();
 
+                                                var triggerAt = 150;
+                                                var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
 
+                                                if ($(window).scrollTop() >= triggerHeight) {
+                                                    $('#about').css('visibility', 'visible').hide().fadeIn(4000);
+                                                    $(this).off('scroll');
+                                                }
+                                            }); */
 
-var $loading = $('#loader').hide();
-$(document)
-  .ajaxStart(function () {
-    $loading.show();
-  })
-  .ajaxStop(function () {
-    $loading.hide();
-  });
-
-
-
+    $('#contact')
+        .click(function() {
+            $(this).find('iframe').addClass('clicked')
+        })
+        .mouseleave(function() {
+            $(this).find('iframe').removeClass('clicked')
+        });
 </script>
